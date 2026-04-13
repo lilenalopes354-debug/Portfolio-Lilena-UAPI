@@ -50,10 +50,13 @@
         }
         .section { max-width: 1000px; margin: auto; padding: 4rem 2rem; text-align: center; }
         .foto-perfil {
-            width: 150px; height: 150px;
-            border-radius: 50%; object-fit: cover;
-            margin-bottom: 1.5rem; border: 3px solid var(--card-border);
-        }
+    width: 180px;      /* Tamanho da foto */
+    height: 180px;     /* Deve ser igual à largura para ser um círculo perfeito */
+    border-radius: 50%; /* Isso faz o círculo */
+    object-fit: cover; /* Isso garante que o rosto não fique "esticado" */
+    border: 3px solid var(--card-border);
+    margin-bottom: 1.5rem;
+}
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -87,7 +90,7 @@
     <main>
         <section id="sobre" class="section">
             <h2>Sobre Mim</h2>
-            <img src="https://via.placeholder.com/150" alt="Foto de Perfil" class="foto-perfil">
+           <img src="foto.jpg.jpeg" alt="Foto de Lilena" class="foto-perfil">
             <p>Sou estudante de Sistemas para Internet (UAPI) e tenho foco em transformar requisitos em soluções digitais estruturadas.</p>
         </section>
         <section id="projetos" class="section">
